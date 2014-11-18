@@ -47,7 +47,7 @@ namespace KD_tree.ListData
         public DPoint SearchNN(DPoint newPoint)
         {
             DPoint bestPoint = points[0];
-            double minDist = 9999999999;
+            double minDist = double.MaxValue;
 
             foreach (DPoint point in points)
             {
